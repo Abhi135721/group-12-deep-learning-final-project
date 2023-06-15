@@ -21,3 +21,6 @@ To run this we need to execute the following command and the videos will be down
 * **yt_video_get_frames.py**:  
 This util parses already downloaded youtube videos and extracts the frames from videos based in the middle_frame_timestamp form the ava csv file. To use this we need to execute the following command.  
 ``` python yt_video_get_frames.py ```
+
+## Models
+In this folder the ML models are available.
