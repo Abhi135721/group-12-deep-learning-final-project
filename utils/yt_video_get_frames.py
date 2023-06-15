@@ -58,7 +58,7 @@ for i in range(len(video_ids)):
     #print(f"Action ID: {action_id}")
     #print(f"Person ID: {person_id}")
 
-    save_path = "C:/UB/Summer_2023/DL/Codebase/group-12-deep-learning-final-project/Dataset/AVA_Images/" + str(action_id)
+    save_path = "C:/UB/Summer_2023/DL/Codebase/group-12-deep-learning-final-project/Dataset/AVA_images/" + str(action_id)
     if not os.path.exists(save_path):
         os.makedirs(save_path)
     save_path  += "/" + video_id + "_" + str(person_id) + ".jpg" 
