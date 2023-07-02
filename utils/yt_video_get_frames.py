@@ -4,7 +4,7 @@ import os
 
 
 # Step 1: Load the CSV file
-csv_file = '../Dataset/ava_v2.2/ava_train_v2.2.csv'
+csv_file = '../Dataset/ava_v2.2/ava_val_v2.2.csv'
 df = pd.read_csv(csv_file, header=None)  # Assuming there are no column names in the CSV
 
 # Step 2: Extract relevant information
@@ -16,9 +16,10 @@ person_ids = df[7]
 
 #video_ids = ['-5KQ66BBWC4', '-IELREHX_js', '-OyDO1g74vc']
 # Step 3: Load video frames
-video_folder = '../Dataset/AVA_videos/train/'   # Path to the folder containing the video files
+video_folder = '../Dataset/AVA_videos/val/'   # Path to the folder containing the video files
 
 for i in range(len(video_ids)):
+    print(i)
     video_id = video_ids[i]
     video_file = os.path.join(video_folder, video_id + '.mp4')
     
@@ -58,7 +59,7 @@ for i in range(len(video_ids)):
     #print(f"Action ID: {action_id}")
     #print(f"Person ID: {person_id}")
 
-    save_path = "C:/UB/Summer_2023/DL/Codebase/group-12-deep-learning-final-project/Dataset/AVA_images/" + str(action_id)
+    save_path = "C:/Users/Pavan Kumar Chella/Desktop/Project/group-12-deep-learning-final-project/Dataset/AVA_images/val/" + str(action_id)
     if not os.path.exists(save_path):
         os.makedirs(save_path)
     save_path  += "/" + video_id + "_" + str(person_id) + ".jpg" 
