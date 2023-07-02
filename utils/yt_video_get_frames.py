@@ -2,7 +2,6 @@ import pandas as pd
 import cv2
 import os
 
-
 # Step 1: Load the CSV file
 csv_file = '../Dataset/ava_v2.2/ava_val_v2.2.csv'
 df = pd.read_csv(csv_file, header=None)  # Assuming there are no column names in the CSV
